@@ -24,6 +24,10 @@ a {
     font-weight: 700;
 }
 
+a:focus{
+    color: #3b83bd;
+}
+
 a:hover{
     color: #2c97c1;
 }
@@ -123,8 +127,8 @@ h2{
 /*=====================Speakers===================== */
 
 #speakers{
-    padding-top: 10px;
-    padding-bottom: 90px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     border-bottom: 2px solid #f0f0f1;
 }
 
@@ -140,12 +144,19 @@ h2{
 }
 
 .section-tabs{
-    border: 3px solid #ececec;
+    border: 3px solid #333;
     border-radius: 2px;
 }
 
 .section-tabs .nav-tabs li:not(.active){
-    background: #ececec;
+    background-color: #333;
+}
+
+.section-tabs .nav-tabs.nav-justified li.active,
+.section-tabs .nav-tabs.nav-justified li a:hover,
+.section-tabs .nav-tabs.nav-justified li.active a:hover
+{
+ background-color: #111;
 }
 
 .section-tabs .nav-tabs.nav-justified li a, 
@@ -161,11 +172,12 @@ h2{
 }
 
 .section-tabs .nav-tabs li.active a{
-    color: #9097a1;
+    background-color: #222;
+    color: #fff;
 }
 
 .nav-tabs li a{
-    color: #abb1ba;
+  color: #fff;
 }
 
 .section-tabs .tab-content{
@@ -262,18 +274,74 @@ h2{
 /*=====================Events===================== */
 
 #events{
- padding-top: 10px;
-    padding-bottom: 90px;
+ padding-top: 45px;
+    padding-bottom: 45px;
     border-bottom: 2px solid #f0f0f1;
 }
 
 .link{
     text-transform: uppercase;
+    font-size: 17px;
 }
 
 .item>div>a{
    color: #fff;
 }
+
+.date{
+    background: #42aaff;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0px 5px;
+    text-align: center;
+    border-radius: 2px;
+    min-width: 115px;
+    max-height: 29px;
+    display: inline-block;  
+    margin-right: 25px;  
+}
+
+.collapse-link{
+    color: #42aaff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.collapse-link:hover{
+    color: #42aaff;
+}
+
+.collapse-state{
+     color: #42aaff;
+}
+
+.cherry-text{
+    /*текст в аккордеоне*/
+/*    color: #cf3476;*/
+color: #fff;
+}
+
+.tab-collapse{
+    margin-bottom: 20px;
+}
+
+.row-item{
+    margin-top: 100px;
+}
+
+.carousel-indicators{
+    left: 0;
+    bottom: 5px;
+    margin: 0;
+    margin-left: 20px;
+    width: auto; 
+}
+
+.carousel-indicators li{
+    border: 1px, solid;
+}
+
 
 
 /*=====================Media===================== */
@@ -287,6 +355,9 @@ h2{
 @media only screen and (max-width : 992px) {
 	.row-item-col{
         margin: 20px 0;
+    }
+    .row-item{
+        margin-top: 30px;
     }
 }
 
@@ -307,5 +378,7 @@ h2{
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+    .row-item{
+        margin-top: 10px;
+    }
 }
