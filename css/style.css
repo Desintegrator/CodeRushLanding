@@ -1,0 +1,305 @@
+@import "http://fonts.fontstorage.com/import/ubuntu.css";
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html, body{
+    height: 100%;
+    background-color: #49423d;
+    color: #fff;
+}
+
+body {
+    background: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    min-width: 320px;
+}
+
+a {
+    font-family: 'Oswald';
+    font-size: 16px;
+    color: #2cc7c1;
+    font-weight: 700;
+}
+
+a:hover{
+    color: #2c97c1;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+section{
+    position: relative;
+}
+
+h2{
+     font-family: 'Oswald';
+     font-size: 30px;
+     font-weight: 500;
+     margin-top: 0;
+     text-transform: uppercase;
+     color: #fde910;
+}
+
+
+/*=====================header=====================*/
+
+#header{
+    background: url(../img/2.jpg) center no-repeat;
+    background-size: cover;
+    /*height: 100vh;*/
+    height: 100%;
+    min-height: 500px;
+}
+
+
+.section-table{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.section-row{
+    display: table-row;
+}
+
+.section-cell{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.section-center{
+    max-width: 700px;
+    display: inline-block;
+}
+
+#header h1{
+    font-family: 'Oswald';
+    font-size: 31px;
+    font-weight: 700;
+    color: #fde910;
+    text-transform: uppercase;
+}
+
+#header p{
+    color:#fff;
+    font-size: 20px;
+}
+
+.btn{
+    font-family: 'Oswald';
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    transition: background .5s;
+}
+
+.btn-primary{
+    background: #7ea4e8;
+}
+
+.btn-primary:hover{
+    background: #6787c2;
+}
+
+.btn-default {
+     background: #6a7079
+}
+
+.btn-default:hover {
+     background: #474c52;
+     color: #fff;
+}
+
+/*=====================Speakers===================== */
+
+#speakers{
+    padding-top: 10px;
+    padding-bottom: 90px;
+    border-bottom: 2px solid #f0f0f1;
+}
+
+#speakers h2{
+    color: #fde910;
+}
+
+.large {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.section-tabs{
+    border: 3px solid #ececec;
+    border-radius: 2px;
+}
+
+.section-tabs .nav-tabs li:not(.active){
+    background: #ececec;
+}
+
+.section-tabs .nav-tabs.nav-justified li a, 
+.section-tabs .nav-tabs.nav-justified li.active a,
+.section-tabs .nav-tabs.nav-justified li.active a:focus,
+.section-tabs .nav-tabs.nav-justified li.active a:hover{
+    border-radius: 0;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    outline: 0;
+}
+
+.section-tabs .nav-tabs li.active a{
+    color: #9097a1;
+}
+
+.nav-tabs li a{
+    color: #abb1ba;
+}
+
+.section-tabs .tab-content{
+    padding: 25px 20px;
+}
+
+.section-tabs .tab-content ul{
+    padding-left: 10px;
+}
+
+.section-tabs .tab-content ul li{
+    line-height: 30px;
+}
+
+.section-tabs .tab-content ul li i{
+    font-size: 15 px;
+    color: #2cc7c1;
+    margin-right: 10px;
+    
+}
+
+.speakers-head{
+    margin-top: 50px;
+    margin-block-end: 50px;
+}
+
+.speakers-head h2{
+    color: #fde910;
+}
+
+.speakers h3{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.item>div{
+    position: relative;
+}
+
+.front{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+   
+
+    /*IE*/
+    left: 50%;
+    margin-left: -90px;        
+}
+
+.back{
+    width: 180px;
+    height: 180px;
+    background: #507398;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: 0;
+     cursor: pointer;
+}
+
+.back i{
+    line-height: 180px;
+    font-size: 60px;
+}
+
+.item>div:hover .front{
+    opacity: 0.3;
+}
+
+.item>div:hover .back{
+    opacity: 0.7;
+    transition: transform 0.5s ease;
+    transform: rotate(360deg);
+}
+
+.item>div:hover h3{
+    color:#507398;
+}
+
+.speakers-footer{
+    margin-top: 70px;
+}
+
+.text-speakers-footer{
+       max-width: 500px;
+    display: inline-block;
+}
+
+.modal-content{
+    color:  #49423d;
+    text-align: center;
+}
+
+/*=====================Events===================== */
+
+#events{
+ padding-top: 10px;
+    padding-bottom: 90px;
+    border-bottom: 2px solid #f0f0f1;
+}
+
+.link{
+    text-transform: uppercase;
+}
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.row-item-col{
+        margin: 20px 0;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 600px) {
+	#header h1{
+    font-size: 20px;
+    }
+
+    #header p{
+        font-size: 16px;
+    }
+    
+    .section-btn{
+        font-size: 15px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
