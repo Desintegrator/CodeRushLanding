@@ -20,13 +20,14 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/jquery.boxloader.min.js"></script>
+<script src="js/parallax.min.js"></script>
 
 <body>
 	<!--Шапка-->
 	<section id="header">
 		<div class="section-table">
 			<div class="section-row">
-				<div class="section-cell">
+				<div class="section-cell parallax-window" data-parallax="scroll" data-image-src="img/2.jpg">
 					<div class="section-center" id="main-block" style="display:none">
 						<p class="logo">
 							<img src="img/logo.png" alt="logo">
@@ -116,7 +117,7 @@
 					<div class="item animated-appearance">
 						<div>
 							<img src="img/sp1.jpg" alt="Алексей Чеботарев" class="front img-circle">
-							<span class="back"><i class="fa fa-vk" aria-hidden="true" data-toggle="modal" data-target="#modalSpeaker1"></i></span>
+							<a href="https://vk.com/desintegrator96"><span class="back"><i class="fa fa-vk" aria-hidden="true"></i></span></a>
 							<h3>Алексей<br>Чеботарев</h3>
 						</div>
 
@@ -130,7 +131,7 @@
 					<div class="item animated-appearance">
 						<div>
 							<img src="img/sp2.jpg" alt="Евгений Лапидус" class="front img-circle">
-							<span class="back"><i class="fa fa-vk" aria-hidden="true" data-toggle="modal" data-target="#modalSpeaker2"></i></span>
+							<a href="https://vk.com/desintegrator96"><span class="back"><i class="fa fa-vk" aria-hidden="true"></i></span></a>
 							<h3>Евгений<br>Лапидус</h3>
 						</div>
 						<p>
@@ -143,7 +144,7 @@
 					<div class="item animated-appearance">
 						<div>
 							<img src="img/sp3.jpg" alt="Николай Бындю" class="front img-circle">
-							<span class="back"><i class="fa fa-vk" aria-hidden="true" data-toggle="modal" data-target="#modalSpeaker3"></i></span>
+							<a href="https://vk.com/desintegrator96"><span class="back"><i class="fa fa-vk" aria-hidden="true"></i></span></a>
 							<h3>Николай<br>Бындю</h3>
 						</div>
 						<p>
@@ -155,8 +156,9 @@
 				<div class="col-xs-12 col-sm-6 col-md-3">
 					<div class="item animated-appearance">
 						<div>
+							
 							<img src="img/sp4.jpg" alt="Сергей Попов" class="front img-circle">
-							<span class="back"><i class="fa fa-vk" aria-hidden="true" data-toggle="modal" data-target="#modalSpeaker4"></i></span>
+							<a href="https://vk.com/desintegrator96"><span class="back"><i class="fa fa-vk" aria-hidden="true"></i></span></a>
 							<h3>Сергей<br>Попов</h3>
 
 						</div>
@@ -167,86 +169,6 @@
 				</div>
 			</div>
 			<!--/speakers-->
-
-			<!-- Модальное окно о наставниках-->
-			<div class="modal fade" id="modalSpeaker1" tabindex="-1" role="dialog" aria-labelledby="modalSpeaker1Label">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="modalSpeaker1Label">Алексей Чеботарев</h4>
-						</div>
-						<div class="modal-body">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi qui, dolorem odio impedit exercitationem vero
-								sapiente ipsam. Magnam, illum, animi fugiat perspiciatis esse deleniti ullam, saepe, velit odio laborum mollitia.</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--/Модальное окно о наставниках-->
-
-			<!-- Модальное окно о наставниках-->
-			<div class="modal fade" id="modalSpeaker2" tabindex="-1" role="dialog" aria-labelledby="modalSpeaker2Label">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="modalSpeaker2Label">Евгений Лапидус</h4>
-						</div>
-						<div class="modal-body">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi qui, dolorem odio impedit exercitationem vero
-								sapiente ipsam. Magnam, illum, animi fugiat perspiciatis esse deleniti ullam, saepe, velit odio laborum mollitia.</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--/Модальное окно о наставниках-->
-
-			<!-- Модальное окно о наставниках-->
-			<div class="modal fade" id="modalSpeaker3" tabindex="-1" role="dialog" aria-labelledby="modalSpeaker3Label">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="modalSpeaker3Label">Николай Бындю</h4>
-						</div>
-						<div class="modal-body">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi qui, dolorem odio impedit exercitationem vero
-								sapiente ipsam. Magnam, illum, animi fugiat perspiciatis esse deleniti ullam, saepe, velit odio laborum mollitia.</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--/Модальное окно о наставниках-->
-
-			<!-- Модальное окно о наставниках-->
-			<div class="modal" id="modalSpeaker4" tabindex="-1" role="dialog" aria-labelledby="modalSpeaker4Label">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h4 class="modal-title" id="modalSpeaker4Label">Сергей Попов</h4>
-						</div>
-						<div class="modal-body">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi qui, dolorem odio impedit exercitationem vero
-								sapiente ipsam. Magnam, illum, animi fugiat perspiciatis esse deleniti ullam, saepe, velit odio laborum mollitia.</p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--/Модальное окно о наставниках-->
 
 			<!--speakers footer-->
 			<div class="row speakers-footer text-center">
