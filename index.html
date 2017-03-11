@@ -9,7 +9,8 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/select2.min.css" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awe some/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
@@ -46,6 +47,7 @@
 			</div>
 		</div>
 	</section>
+	<!--/Шапка-->
 
 	<!-- 1я секция -->
 	<section id="speakers">
@@ -184,6 +186,15 @@
 	</section>
 	<!-- /1я секция -->
 
+	<section id="photo-section">
+		<div class="section-table">
+			<div class="section-row">
+				<div class="section-cell parallax-window" data-parallax="scroll" data-image-src="img/2.jpg" style="height: 200px;"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 2я секция -->
 	<section id="events">
 		<div class="container">
 			<div class="row">
@@ -491,33 +502,45 @@
 			</div>
 		</div>
 	</section>
+	<!-- /2я секция -->
 
+	<section id="photo-section">
+		<div class="section-table">
+			<div class="section-row">
+				<div class="section-cell parallax-window" data-parallax="scroll" data-image-src="img/2.jpg" style="height: 200px;"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 3я секция -->
 	<section id="form">
 		<div class="container">
-			<div class="row "  style="text-align: center;">
-				<h2>Забронируйте свое место прямо сейчас!</h2>
+			<div class="row animated-appearance" style="text-align: center;">
+				<h2>Забронируйте место прямо сейчас!</h2>
 				<p class="large">
 					Sed ut perspiciants unde omnis iste natus errors<br>sit voluplatem accusamus doloremque laudantium
 				</p>
 			</div>
-			<div class="row ">
+			<div class="row animated-appearance">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="section-form">
+					<div class="section-form" style="margin-bottom: 20px;">
 						<!--Форма регистрации-->
 						<form id="myForm">
 							<div class="row">
 								<div class="form-group col-md-3">
-									<input type="text" name="name" class="form-control" placeholder="Имя Фамилия" required>
+									<input type="text" class="form-control" name="name" placeholder="Имя Фамилия" required>
+									<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 								</div>
 								<div class="form-group col-md-3">
-									<input type="email" name="email" class="form-control" placeholder="email@address.com" required>
+									<input type="email" class="form-control" name="email" placeholder="email@address.com" required>
+									<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 								</div>
 								<div class="form-group col-md-3">
-									<select name="plan" class="form-control form-sel">
+									<select name="plan" class="form-control form-sel" style="width: 100%; height: 44px;">
 										<option disabled selected class="hidden">Формат участия</option>
-										<option>Стандарт - 4900 ₽</option>
-										<option>Привилегия - 7900₽</option>
-										<option>ВИП - 9900 ₽</option>
+										<option>Эконом - 4900 ₽</option>
+										<option>Стандарт - 7900₽</option>
+										<option>Привилегия - 9900 ₽</option>
 									</select>
 								</div>
 								<div class="form-group col-md-3">
@@ -531,14 +554,25 @@
 			</div>
 		</div>
 	</section>
+	<!-- /3я секция -->
+
+	<section id="photo-section">
+		<div class="section-table">
+			<div class="section-row">
+				<div class="section-cell parallax-window" data-parallax="scroll" data-image-src="img/2.jpg" style="height: 200px;"></div>
+			</div>
+		</div>
+	</section>
 
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/validator.min.js"></script>
+	<script src="js/select2.full.min.js"></script>
 	<script src="js/scripts.js"></script>
 
 	<!--Плавное появление шапки-->
 	<script>
 		$(function () {
-			setTimeout("$('#main-block').show('drop');", 1000);
+			setTimeout("$('#main-block').show('drop');", 3000);
 		});
 	</script>
 
