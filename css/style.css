@@ -1,6 +1,6 @@
 @import "http://fonts.fontstorage.com/import/ubuntu.css";
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 html, body{
     height: 100%;
@@ -53,7 +53,7 @@ h2{
 }
 
 #photo-section{
-    border-bottom: 2px solid #f0f0f1;
+    border-bottom: 1px solid #878787;
 }
 
 /*=====================header=====================*/
@@ -134,7 +134,8 @@ h2{
 #speakers{
     padding-top: 45px;
     padding-bottom: 45px;
-    border-bottom: 2px solid #f0f0f1;
+    border-bottom: 1px solid #878787;
+    border-top: 1px solid #878787;
 }
 
 #speakers h2{
@@ -281,7 +282,7 @@ h2{
 #events{
  padding-top: 45px;
     padding-bottom: 45px;
-    border-bottom: 2px solid #f0f0f1;
+    border-bottom: 1px solid #878787;
 }
 
 .link{
@@ -352,7 +353,7 @@ color: #fff;
 #form{
     padding-top: 45px;
     padding-bottom: 45px;
-    border-bottom: 2px solid #f0f0f1;
+    border-bottom: 1px solid #878787;
 }
 
 .section-form{
@@ -422,6 +423,78 @@ color: #fff;
 
 li.select2-results__option:first-child{
     display: none;
+}
+
+/*=====================Sponsors===================== */
+
+#partners{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #878787;
+}
+
+/*=====================Map===================== */
+
+#event-map{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #878787;
+}
+
+.map-container
+{
+    padding-right: 0;
+}
+
+/*=====================Footer===================== */
+#footer{
+    padding-top: 70px;
+    background-color: #1a1a1a;
+    text-align: left;
+}
+
+#footer h3,
+#footer h4{
+    margin: 0 0 25px;
+}
+
+#footer h4{
+     font-size: 20px;
+}
+
+#footer h3 span{
+    font-weight: 700;
+}
+
+#footer p{
+    color: #a1a1a1;
+}
+
+#footer a,
+#footer .contacts p{
+    font-weight: 500;
+    color: #2cc7c1;
+}
+
+.link-contacts{
+    font-size: 17px;
+}
+
+.container-contacts{
+    background-color: #1a1a1a;
+}
+
+.row-copyright{
+   background-color: #0a0a0a;
+   width: 100%;
+   min-height: 20px;
+   border-top: 1px solid #878787;
+}
+
+.row-copyright p{
+    text-align: center;
+    padding: 15px;
+    margin: 0;
 }
 
 

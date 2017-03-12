@@ -15,6 +15,9 @@ $(function () {
     minimumResultsForSearch: Infinity
   });
 
+  new WOW().init({
+    offset: 100
+  });
 
 });
 
@@ -38,12 +41,3 @@ $(function () {
     */
   });
 });
-
-$('.animated-appearance').boxLoader({
-  direction: "y",
-  position: "100%",
-  effect: "fadeIn",
-  duration: ".7s",
-  windowarea: "50%"
-});
-

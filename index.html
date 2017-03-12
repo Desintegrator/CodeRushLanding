@@ -5,12 +5,23 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Мета для соц иконок-->
+	<meta property="og:title" content="CodeRush" />
+	<meta property="og:description" content="Интенсив в апреле" />
+	<meta property="og:url" content="http://localhost:9615/index.html" />
+	<meta property="og:image" content="img/2.jpg" />
+
+	<meta name="title" content="CodeRush" />
+	<meta name="description" content="Интенсив в апреле" />
+	<link rel="image_src" href="img/2.jpg" />
+	<!--/Мета для соц иконок-->
+
 	<title>CodeRush</title>
 
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/select2.min.css" rel="stylesheet">
-	<link href="http://maxcdn.bootstrapcdn.com/font-awe some/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
@@ -19,9 +30,9 @@
 <![endif]-->
 </head>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/jquery.boxloader.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="js/parallax.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
 <body>
 	<!--Шапка-->
@@ -53,7 +64,7 @@
 	<section id="speakers">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 animated-appearance">
+				<div class="col-md-6 wow slideInUp">
 					<h2>основные цели программы</h2>
 					<p class="large">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia porro, deserunt consequatur iure ut in quisquam ratione nesciunt
@@ -65,7 +76,7 @@
 					</p>
 				</div>
 				<!--section-tabs -->
-				<div class="col-md-6 row-item-col animated-appearance">
+				<div class="col-md-6 row-item-col wow slideInUp">
 					<div class="section-tabs">
 						<!-- Nav tabs -->
 						<ul class="nav nav-tabs nav-justified" role="tablist">
@@ -105,7 +116,7 @@
 			</div>
 
 			<!--speakers-head -->
-			<div class="row text-center speakers-head">
+			<div class="row text-center speakers-head wow lightSpeedIn">
 				<h2>наставники</h2>
 				<p class="large">
 					С вами будут работать профессионалы
@@ -115,55 +126,54 @@
 			<!--speakers-->
 			<div class="row speakers text-center">
 				<div class="col-xs-12 col-sm-6 col-md-3">
-					<div class="item animated-appearance">
-						<div>
+					<div class="item">
+						<div class="wow rotateIn">
 							<img src="img/sp1.jpg" alt="Алексей Чеботарев" class="front img-circle">
 							<a href="https://vk.com/desintegrator96"><span class="back"><i class="fa fa-vk" aria-hidden="true"></i></span></a>
 							<h3>Алексей<br>Чеботарев</h3>
 						</div>
 
-						<p>
+						<p class="wow bounceInUp">
 							Sed ut perspiciants unde omnis iste natus error sit voluptatem accusamus doloremque laudantium, totam rem
 						</p>
 					</div>
 				</div>
 
-				<div class="col-xs-12 col-sm-6 col-md-3">
-					<div class="item animated-appearance">
-						<div>
+				<div class="col-xs-12 col-sm-6 col-md-3 wow rotateIn">
+					<div class="item">
+						<div class="wow rotateIn" data-wow-delay="0.4s">
 							<img src="img/sp2.jpg" alt="Евгений Лапидус" class="front img-circle">
 							<a href="https://vk.com/desintegrator96"><span class="back"><i class="fa fa-vk" aria-hidden="true"></i></span></a>
 							<h3>Евгений<br>Лапидус</h3>
 						</div>
-						<p>
+						<p class="wow bounceInUp">
 							Sed ut perspiciants unde omnis iste natus error sit voluptatem accusamus doloremque laudantium, totam rem
 						</p>
 					</div>
 				</div>
 
 				<div class="col-xs-12 col-sm-6 col-md-3">
-					<div class="item animated-appearance">
-						<div>
+					<div class="item">
+						<div class="wow rotateIn" data-wow-delay="0.8s">
 							<img src="img/sp3.jpg" alt="Николай Бындю" class="front img-circle">
 							<a href="https://vk.com/desintegrator96"><span class="back"><i class="fa fa-vk" aria-hidden="true"></i></span></a>
 							<h3>Николай<br>Бындю</h3>
 						</div>
-						<p>
+						<p class="wow bounceInUp">
 							Sed ut perspiciants unde omnis iste natus error sit voluptatem accusamus doloremque laudantium, totam rem
 						</p>
 					</div>
 				</div>
 
 				<div class="col-xs-12 col-sm-6 col-md-3">
-					<div class="item animated-appearance">
-						<div>
-
+					<div class="item">
+						<div class="wow rotateIn" data-wow-delay="1.2s">
 							<img src="img/sp4.jpg" alt="Сергей Попов" class="front img-circle">
 							<a href="https://vk.com/desintegrator96"><span class="back"><i class="fa fa-vk" aria-hidden="true"></i></span></a>
 							<h3>Сергей<br>Попов</h3>
 
 						</div>
-						<p>
+						<p class="wow bounceInUp">
 							Sed ut perspiciants unde omnis iste natus error sit voluptatem accusamus doloremque laudantium, totam rem
 						</p>
 					</div>
@@ -173,11 +183,11 @@
 
 			<!--speakers footer-->
 			<div class="row speakers-footer text-center">
-				<p class="large text-speakers-footer">
+				<p class="large text-speakers-footer wow bounceInDown">
 					Sed ut perspiciants unde omnis iste natus error sit voluptatem accusamus doloremque laudantium
 				</p>
-				<div class="section-btn">
-					<a href="#form" class="btn btn-primary animated-appearance">записаться <i class="fa fa-chevron-circle-right"></i></a>
+				<div class="section-btn wow zoomIn">
+					<a href="#form" class="btn btn-primary">записаться <i class="fa fa-chevron-circle-right"></i></a>
 				</div>
 			</div>
 			<!--/speakers footer-->
@@ -198,7 +208,7 @@
 	<section id="events">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 animated-appearance row-item-col ">
+				<div class="col-md-6 wow bounceInLeft row-item-col ">
 					<h2>Программа курса</h2>
 					<p class="large">Sed ut perspiciants unde omnis iste natus error sit voluptatem accusamus doloremque laudantium, totam rem</p>
 					<p>Suspendisse id enim ut justo tincidunt lobortis eu vitae lectus. Nam pharetra urna quis mauris mollis tempus non nec
@@ -210,7 +220,7 @@
 					<a href="#" class="link"><i class="fa fa-arrow-circle-down"></i> скачать подробное расписание (pdf)</a>
 				</div>
 
-				<div class="col-md-6 animated-appearance">
+				<div class="col-md-6 wow bounceInRight">
 					<!--section-tabs -->
 
 					<div class="section-tabs">
@@ -436,12 +446,12 @@
 				</div>
 			</div>
 			<div class="row row-item">
-				<div class="col-md-6 animated-appearance row-item-col">
+				<div class="col-md-6 wow bounceInLeft row-item-col">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AYkEfr-5b1o?list=PLypd1VrGv7FPokhw3f5pwBQTHsU9T2mBq"></iframe>
 					</div>
 				</div>
-				<div class="col-md-6 animated-appearance row-item-col">
+				<div class="col-md-6 wow bounceInRight row-item-col">
 					<h2>Видеообзор курса</h2>
 					<p class="large">
 						Set ud perspiciants unde omnis iste narus error sit voluplatem accusantium doloremque
@@ -454,7 +464,7 @@
 				</div>
 			</div>
 			<div class="row row-item">
-				<div class="col-md-6 animated-appearance row-item-col">
+				<div class="col-md-6 wow bounceInLeft row-item-col">
 					<h2>Фотогалерея прошедших мероприятий</h2>
 					<p class="large">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione recusandae itaque commodi enim dolore, ea sequi, fugiat.
@@ -466,7 +476,7 @@
 					</p>
 					<a href="#" class="link">Смотреть фото и видеоотчеты на сайте <i class="fa fa-arrow-circle-right"></i></a>
 				</div>
-				<div class="col-md-6 animated-appearance row-item-col">
+				<div class="col-md-6 wow bounceInRight row-item-col">
 					<!--ГАЛЕРЕЯ-->
 					<div id="carousel" class="carousel slide" data-ride="carousel">
 						<!--Индикаторы-->
@@ -515,13 +525,13 @@
 	<!-- 3я секция -->
 	<section id="form">
 		<div class="container">
-			<div class="row animated-appearance" style="text-align: center;">
+			<div class="row wow fadeIn" style="text-align: center;">
 				<h2>Забронируйте место прямо сейчас!</h2>
 				<p class="large">
 					Sed ut perspiciants unde omnis iste natus errors<br>sit voluplatem accusamus doloremque laudantium
 				</p>
 			</div>
-			<div class="row animated-appearance">
+			<div class="row wow flipInX">
 				<div class="col-md-10 col-md-offset-1">
 					<div class="section-form" style="margin-bottom: 20px;">
 						<!--Форма регистрации-->
@@ -556,6 +566,20 @@
 	</section>
 	<!-- /3я секция -->
 
+	<section id="partners">
+		<div class="container" style="text-align: center;">
+			<div class="row wow bounceInUp">
+				<h2>Наши партнеры</h2>
+			</div>
+			<div class="row animated-appearance" style="line-height: 100px;">
+				<div class="col-md-3 col-xs-6 wow zoomInLeft"><img src="img/sponsor-1.png" alt=""></div>
+				<div class="col-md-3 col-xs-6 wow zoomInLeft" data-wow-delay="0.2s"><img src="img/sponsor-2.png" alt=""></div>
+				<div class="col-md-3 col-xs-6 wow zoomInRight" data-wow-delay="0.4s"><img src="img/sponsor-3.png" alt=""></div>
+				<div class="col-md-3 col-xs-6 wow zoomInRight" data-wow-delay="0.6s"><img src="img/sponsor-4.png" alt=""></div>
+			</div>
+		</div>
+	</section>
+
 	<section id="photo-section">
 		<div class="section-table">
 			<div class="section-row">
@@ -564,16 +588,106 @@
 		</div>
 	</section>
 
+	<section id="event-map">
+		<div class="container map-container">
+			<div class="row">
+				<div class="col-md-3 col-lg-4 wow bounceInUp">
+					<h2>Встречаемся здесь</h2>
+					<p class="large">
+						Sed ut perspiciants unde omnis iste natus error sit voluptatem accusamus doloremque laudantium, totam rem
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dignissimos incidunt qui porro recusandae vel facere,
+						unde voluptates fugit velit ipsam nesciunt numquam sit harum amet magnam illo inventore voluptatibus!
+					</p>
+				</div>
+				<div class="col-md-9 col-lg-8 wow zoomIn" id="map" style="height: 500px;"></div>
+			</div>
+	</section>
+
+	<section id="footer">
+		<div class="container container-contacts">
+			<div class="row" style="padding-bottom: 70px;">
+				<div class="col-sm-12 col-md-6 row-item-col">
+					<h3><span>257</span> человек прошли обучение в февральском потоке</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas velit repudiandae cupiditate et veritatis incidunt quasi
+						obcaecati optio assumenda ipsa amet, laboriosam dolore vero nemo sint quia nihil voluptas, corrupti.</p>
+				</div>
+				<div class="col-sm-6 col-md-3 row-item-col">
+					<h4>Остались вопросы?</h4>
+					<p>
+						Посетите <a href="#" class="link-contacts">наш сайт</a> или напишите интересующий вопрос на почту <a href="#" class="link-contacts">help@coderush.com</a>.<br>Мы будем рады вам помочь!
+					</p>
+				</div>
+				<div class="col-sm-6 col-md-3 row-item-col">
+					<h4>Контакты</h4>
+					<div class="contacts">
+						<p><i class="fa fa-phone-square"> 8-800-4444-000</i></p>
+						<p><i class="fa fa-envelope"> <a href="#">help@coderush.com</a></i></p>
+						<p><i class="fa fa-skype"> Coderushsupport</i></p>
+					</div>
+				</div>
+
+				<div class="col-sm-12"  style="text-align: left;">
+					<div class="pluso" data-background="none;" data-options="medium,square,line,horizontal,nocounter,sepcounter=1,theme=14" data-services="vkontakte,odnoklassniki,google,facebook,twitter,moimir"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container row-copyright">
+			<div class="row">
+				<div><p>&copy; 2017 <a href="#">CodeRush</a>, все права защищены</p></div>
+			</div>
+		</div>
+	</section>
+
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/validator.min.js"></script>
 	<script src="js/select2.full.min.js"></script>
 	<script src="js/scripts.js"></script>
+	<script src="js/wow.min.js"></script>
+
 
 	<!--Плавное появление шапки-->
 	<script>
 		$(function () {
-			setTimeout("$('#main-block').show('drop');", 3000);
+			setTimeout("$('#main-block').show('drop');", 1600);
 		});
+	</script>
+
+	<!--Загрузка яндекс карты-->
+	<script type="text/javascript">
+		ymaps.ready(init);
+		var myMap,
+			myPlacemark;
+
+		function init() {
+			myMap = new ymaps.Map("map", {
+				center: [55.19384496, 61.33190874],
+				zoom: 17
+			});
+
+			myPlacemark = new ymaps.Placemark([55.19384496, 61.33190874], {
+				hintContent: 'Гостиница Виктория',
+				balloonContent: 'Мы находимcя здесь'
+			});
+
+			myMap.geoObjects.add(myPlacemark);
+		}
+	</script>
+
+	<!--Социальные кнопки-->
+	<script type="text/javascript">
+		(function () {
+			if (window.pluso) if (typeof window.pluso.start == "function") return;
+			if (window.ifpluso == undefined) {
+				window.ifpluso = 1;
+				var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+				s.type = 'text/javascript'; s.charset = 'UTF-8'; s.async = true;
+				s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://share.pluso.ru/pluso-like.js';
+				var h = d[g]('body')[0];
+				h.appendChild(s);
+			}
+		})();
 	</script>
 
 </body>
